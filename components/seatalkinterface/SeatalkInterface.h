@@ -3,15 +3,15 @@
 namespace esphome {
 namespace seatalkinterface {
 
-// public uart::UARTDevice, 
-class SeatalkInterface : public Component {
-public:
-  
-  SeatalkInterface();
-  void setup();
-  void loop();
-private:  
-
-
-};
+  class SeatalkInterface : public Component {
+  public:
+    
+    SeatalkInterface();
+    void readBus();
+    void loop();
+  private:  
+    SeaTalk *_seaTalk = nullptr;
+    SeaTalkData *_seaTalkData=nullptr;
+    SignalManager *_signalManager = nullptr;
+  };
 }}

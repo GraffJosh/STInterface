@@ -19,7 +19,7 @@ class SeaTalk
 {
 
 public:
-    SeaTalk(SignalManager *signalManager);
+    SeaTalk(SignalManager *signalManager, int rxPin, int txPin);
 
     const uint8_t ST_Minus_1[4] = {0x86, 0x11, 0x05, 0xFA};
     const uint8_t ST_Minus_10[4] = {0x86, 0x11, 0x06, 0xF9};

@@ -3,9 +3,9 @@
 
 /// @brief Seatalk class constructor
 /// @param signalManager Signal manager to send messages to other systems
-SeaTalk::SeaTalk(SignalManager *signalManager)
+SeaTalk::SeaTalk(SignalManager *signalManager, int rxPin, int txPin)
 {
-    _mySerial.begin(4800, SWSERIAL_8S1, RX_IN, TX_OUT, true, 95);
+    _mySerial.begin(4800, SWSERIAL_8S1, rxPin, txPin, true, 95);
     _signalManager = signalManager;
 }
 

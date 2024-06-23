@@ -12,7 +12,7 @@
 #include <SoftwareSerial.h>
 #include "Nmea.h"
 #include "Commands.h"
-#include "AutoPilotData.h"
+#include "models\AutoPilotData.h"
 #include "SignalManager.h"
 
 class SeaTalk
