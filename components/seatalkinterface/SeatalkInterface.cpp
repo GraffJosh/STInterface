@@ -1,6 +1,6 @@
 #include "SeatalkInterface.h"
 #include <Arduino.h>
-#include "Lib\RemoteControl.h"
+// #include "Lib\RemoteControl.h"
 #include "Lib\SeaTalk.h"
 #include "Lib\BoxWifi.h"
 #include "Lib\BoxWebServer.h"
@@ -43,14 +43,14 @@ namespace seatalkinterface {
     _options = new Options();
     _signalManager= new SignalManager(_seaTalkData);
     _seaTalk = new SeaTalk(_signalManager);
-    _remoteControl = new RemoteControl(_seaTalk, _options);
+    // _remoteControl = new RemoteControl(_seaTalk, _options);
     _boxWebServer = new BoxWebServer(_seaTalk, _options);
   }
 
   void SeatalkInterface::loop()
   {
     _seaTalk->processMessages();
-    _remoteControl->processRemote();
+    // _remoteControl->processRemote();
     _boxWebServer->ProcessCommands();
   }
 }}
