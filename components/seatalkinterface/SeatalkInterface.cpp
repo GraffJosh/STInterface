@@ -34,11 +34,11 @@ namespace seatalkinterface {
 
     Serial.begin(9600); // Serial out put for function checks with PC
                         // Initialize SPIFFS
-    if (!SPIFFS.begin(true))
-    {
-      Serial.println("An Error has occurred while mounting SPIFFS");
-      return;
-    }
+    // if (!SPIFFS.begin(true))
+    // {
+    //   Serial.println("An Error has occurred while mounting SPIFFS");
+    //   return;
+    // }
     // _boxWifi = new BoxWifi();
     _seaTalkData= new SeaTalkData();
     // _options = new Options();
