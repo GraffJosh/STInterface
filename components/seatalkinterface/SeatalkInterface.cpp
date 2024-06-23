@@ -6,7 +6,7 @@
 // #include "BoxWebServer.h"
 // #include "Options.h"
 #include "SignalManager.h"
-#include <SPIFFS.h>
+// #include <SPIFFS.h>
 
 RemoteControl *_remoteControl = nullptr;
 SeaTalk *_seaTalk = nullptr;
