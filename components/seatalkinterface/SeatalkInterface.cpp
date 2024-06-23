@@ -14,7 +14,7 @@ namespace seatalkinterface {
 
   void SeatalkInterface::readBus()
   {
-    _seaTalk->checkBus();
+    _seaTalk->processMessages();
   }
 
   void SeatalkInterface::loop()
