@@ -1,4 +1,4 @@
-#include <SeatalkInterface.h>
+#include "SeatalkInterface.h"
 #include <Arduino.h>
 #include "Lib\RemoteControl.h"
 #include "Lib\SeaTalk.h"
