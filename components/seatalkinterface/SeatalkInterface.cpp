@@ -1,7 +1,5 @@
 #include "SeatalkInterface.h"
 #include <Arduino.h>
-#include "SeaTalk.h"
-#include "SignalManager.h"
 
 namespace esphome {
 namespace seatalkinterface {

@@ -1,5 +1,7 @@
 
 #include "esphome/core/component.h"
+#include "SeaTalk.h"
+#include "SignalManager.h"
 namespace esphome {
 namespace seatalkinterface {
 
