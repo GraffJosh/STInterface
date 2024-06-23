@@ -25,7 +25,8 @@ namespace seatalkinterface {
     Serial1.begin( 115200, SERIAL_8N1, 20, 21, true );
     // this->_rxPin = rxPin;
     // this->_txPin = txPin;
-    this->start();
+    this->setup();
+    this->loop();
   }
 
   void SeatalkInterface::setup()
