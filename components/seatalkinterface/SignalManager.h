@@ -2,7 +2,7 @@
 #define SIGNALMANAGER_H
 
 #include "Nmea.h"
-#include "models\SeaTalkData.h"
+#include "SeaTalkData.h"
 
 class SignalManager
 {
