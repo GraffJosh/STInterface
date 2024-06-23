@@ -24,48 +24,48 @@ namespace seatalkinterface {
     // _boxWebServer->ProcessCommands();
   }
 
-  int SeatalkInterface::SendCommand(String* action)
+  int SeatalkInterface::SendCommand(std::__cxx11::string action)
   {
     Serial.println("Action Received");
 
-    Serial.println(*action);
-    if (*action == "minus1")
+    Serial.println(action);
+    if (action == "minus1")
     {
         _commandStack.push(minus_1);
 
         Serial.println("Minus one Web");
     }
-    else if (*action == "plus1")
+    else if (action == "plus1")
     {
         _commandStack.push(plus_1);
         Serial.println("Plus one Web");
     }
-    else if (*action == "minus10")
+    else if (action == "minus10")
     {
         _commandStack.push(minus_10);
         Serial.println("minus ten Web");
     }
-    else if (*action == "plus10")
+    else if (action == "plus10")
     {
         _commandStack.push(plus_10);
         Serial.println("plus ten Web");
     }
-    else if (*action == "auto")
+    else if (action == "auto")
     {
         _commandStack.push(auto_but);
         Serial.println("auto");
     }
-    else if (*action == "standby")
+    else if (action == "standby")
     {
         _commandStack.push(standby_but);
         Serial.println("standby");
     }
-    else if (*action == "starttimer")
+    else if (action == "starttimer")
     {
         _commandStack.push(start_timer);
         Serial.println("Start Timer");
     }
-    else if (*action == "wind")
+    else if (action == "wind")
     {
         _commandStack.push(wind_mode);
         Serial.println("Wind Mode");
