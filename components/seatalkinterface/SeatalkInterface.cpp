@@ -1,10 +1,10 @@
 #include "SeatalkInterface.h"
 #include <Arduino.h>
-#include "RemoteControl.h"
+// #include "RemoteControl.h"
 #include "SeaTalk.h"
-#include "BoxWifi.h"
+// #include "BoxWifi.h"
 // #include "BoxWebServer.h"
-#include "Options.h"
+// #include "Options.h"
 #include "SignalManager.h"
 #include <SPIFFS.h>
 
@@ -41,7 +41,7 @@ namespace seatalkinterface {
     }
     // _boxWifi = new BoxWifi();
     _seaTalkData= new SeaTalkData();
-    _options = new Options();
+    // _options = new Options();
     _signalManager= new SignalManager(_seaTalkData);
     _seaTalk = new SeaTalk(_signalManager);
     // _remoteControl = new RemoteControl(_seaTalk, _options);
