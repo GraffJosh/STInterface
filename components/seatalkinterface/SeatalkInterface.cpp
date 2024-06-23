@@ -1,11 +1,11 @@
 #include "SeatalkInterface.h"
 #include <Arduino.h>
-// #include "Lib\RemoteControl.h"
-#include "Lib\SeaTalk.h"
-#include "Lib\BoxWifi.h"
-#include "Lib\BoxWebServer.h"
-#include "Lib\Options.h"
-#include "Lib\SignalManager.h"
+#include "RemoteControl.h"
+#include "SeaTalk.h"
+#include "BoxWifi.h"
+#include "BoxWebServer.h"
+#include "Options.h"
+#include "SignalManager.h"
 #include <SPIFFS.h>
 
 RemoteControl *_remoteControl = nullptr;

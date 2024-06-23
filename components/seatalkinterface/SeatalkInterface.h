@@ -4,7 +4,7 @@ namespace esphome {
 namespace seatalkinterface {
 
 // public uart::UARTDevice, 
-class Epson : public Component {
+class SeatalkInterface : public Component {
 public:
   
   void SeatalkInterface();
