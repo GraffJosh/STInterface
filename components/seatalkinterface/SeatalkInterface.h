@@ -7,7 +7,7 @@ namespace seatalkinterface {
 class SeatalkInterface : public Component {
 public:
   
-  void SeatalkInterface();
+  SeatalkInterface();
   void setup();
   void loop();
 private:  
