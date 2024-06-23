@@ -14,7 +14,7 @@ namespace seatalkinterface {
     SeatalkInterface();
     void readBus();
     void loop();
-    int SendCommand(String *action);
+    int SendCommand(String action);
     int ProcessCommands();
   private:  
     SeaTalk *_seaTalk = nullptr;

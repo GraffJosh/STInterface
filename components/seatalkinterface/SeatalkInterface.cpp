@@ -24,7 +24,7 @@ namespace seatalkinterface {
     // _boxWebServer->ProcessCommands();
   }
 
-  int SeatalkInterface::SendCommand(std::__cxx11::string action)
+  int SeatalkInterface::SendCommand(String action)
   {
     Serial.println("Action Received");
 
