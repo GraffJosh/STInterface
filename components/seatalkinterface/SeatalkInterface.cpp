@@ -24,7 +24,7 @@ namespace seatalkinterface {
     // _boxWebServer->ProcessCommands();
   }
 
-  void SeatalkInterface::SendCommand(String action)
+  int SeatalkInterface::SendCommand(String action)
   {
     Serial.println("Action Received");
 
@@ -70,15 +70,17 @@ namespace seatalkinterface {
         _commandStack.push(wind_mode);
         Serial.println("Wind Mode");
     }
+    return 0;
 }
 
 // Process Commands On Main Thread
-void SeatalkInterface::ProcessCommands()
+int SeatalkInterface::ProcessCommands()
 {
     while (!_commandStack.isEmpty())
     {
         commands nextCommand= (commands)_commandStack.pop();
         _seaTalk->sendCommand(nextCommand);
     }
+    return 0;
 }
 }}
