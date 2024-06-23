@@ -7,9 +7,9 @@ namespace seatalkinterface {
 class Epson : public Component {
 public:
   
-  SeatalkInterface();
-  setup();
-  loop();
+  void SeatalkInterface();
+  void setup();
+  void loop();
 private:  
 
 
