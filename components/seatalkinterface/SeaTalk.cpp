@@ -224,7 +224,7 @@ bool SeaTalk::send2ST(const uint8_t cmd[], int bytes)
         digitalWrite(LED_PIN, HIGH);
         for (int i = 0; (i < bytes) & (ok); i++)
         {
-            (i == 0) ? _mySerial.write(cmd[i], 040) : _mySerial.write(cmd[i], 070);
+            (i == 0) ? _mySerial.write(cmd[i], SoftwareSerialParity::SWSERIAL_PARITY_MARK) : _mySerial.write(cmd[i], SoftwareSerialParity::SWSERIAL_PARITY_SPACE);
             delay(1);
             if (_mySerial.available())
             {
