@@ -2,7 +2,7 @@
 #define OPTIONS_H
 
 #include <Preferences.h>
-#include "Models/WebOptions.h"
+#include "WebOptions.h"
 
 class Options
 {
